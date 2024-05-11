@@ -27,3 +27,7 @@
 {{- else -}}
     {{- partial "plugin/img.html" $options -}}
 {{- end -}}
+
+<div class="center">
+    <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" />
+</div>
