@@ -29,7 +29,7 @@
     # Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "https://barnes.tech/barnes-technology-logo-command-cropped.png"
+      logo = "https://barnes.tech/barnes-tech-logo-full.png"
       # title name
       name = " Barnes Tech"
       # you can add extra information before the name (HTML format is supported), such as icons
@@ -37,7 +37,7 @@
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       # whether to use typeit animation for title name
-      typeit = true
+      typeit = false
 
   # Footer config
   [params.footer]
