@@ -275,7 +275,7 @@
     RootMe= ""
     Email = ""
     Phone = ""
-    RSS = ""
+    RSS = "https://barnes.tech/index.xml"
 
   # Page global config
   # 文章页面全局配置
