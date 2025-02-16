@@ -42,7 +42,7 @@
     [params.header.title]
       # URL of the LOGO
       # LOGO 的 URL
-      logo = ""
+      logo = "https://barnes.tech/barnes-technology-logo-command-cropped.png"
       # title name
       # 标题名称
       name = "Barnes Tech"
@@ -133,7 +133,7 @@
   # Search config
   # 搜索配置
   [params.search]
-    enable = false
+    enable = true
     # type of search engine ["lunr", "algolia"]
     # 搜索引擎的类型 ["lunr", "algolia"]
     type = "lunr"
@@ -175,7 +175,7 @@
       gravatarEmail = ""
       # URL of avatar shown in home page
       # 主页显示头像的 URL
-      avatarURL = "https://barnes.tech/barnes-technology-logo-command-cropped.png"
+      avatarURL = "https://barnes.tech/robby.png"
       # title shown in home page (HTML format is supported)
       # 主页显示的网站标题 (支持 HTML 格式)
       title = "Barnes Tech Blog"
