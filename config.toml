@@ -31,7 +31,7 @@
       # URL of the LOGO
       logo = "https://barnes.tech/barnes-tech-logo-full.png"
       # title name
-      name = " Barnes Tech"
+      name = ""
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
