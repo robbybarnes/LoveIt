@@ -66,6 +66,15 @@ blockquote {
       }
   }
 
+  /* Ensure logos fit within the menu bar */
+  .theme-light-logo,
+  .theme-dark-logo {
+      max-height: 50px; /* Adjust height as needed */
+      width: auto; /* Maintain aspect ratio */
+      display: inline-block;
+      vertical-align: middle;
+  }
+
   /* Hide dark mode logo by default */
   .theme-dark-logo {
       display: none;
