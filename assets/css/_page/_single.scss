@@ -136,18 +136,18 @@
       transition: color 0.2s ease-in-out;
 
       [theme=dark] & {
-          color: $single-link-color-dark;
+        color: $single-link-color-dark;
       }
 
       &:hover {
-          color: $single-link-hover-color;
-          text-decoration: none; /* Removes underline on hover */
+        color: $single-link-hover-color;
+        text-decoration: none; /* Removes underline on hover */
 
-          [theme=dark] & {
-              color: $single-link-hover-color-dark;
-          }
+        [theme=dark] & {
+          color: $single-link-hover-color-dark;
+        }
       }
-  }
+    }
 
     ul, ol {
       margin: .5rem 0;
@@ -256,10 +256,10 @@
       box-shadow: none;
 
       [theme=dark] & {
-          border-left-color: #aaa;
-          color: #bbb;
+        border-left-color: #aaa;
+        color: #bbb;
       }
-  }
+    }
 
     .footnotes {
       color: $global-font-secondary-color;
@@ -357,4 +357,10 @@
 
 .lg-toolbar .lg-icon::after {
   color: #999;
+}
+
+/* Override global underlined links for header links */
+#header-desktop a,
+#header-mobile a {
+  text-decoration: none !important;
 }
