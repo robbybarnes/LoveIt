@@ -65,3 +65,17 @@ blockquote {
           }
       }
   }
+
+  /* Hide dark mode logo by default */
+  .theme-dark-logo {
+      display: none;
+  }
+
+  /* When dark mode is active, switch logos */
+  [theme="dark"] .theme-dark-logo {
+      display: inline-block;
+  }
+
+  [theme="dark"] .theme-light-logo {
+      display: none;
+  }

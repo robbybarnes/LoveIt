@@ -29,7 +29,8 @@
     # Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "https://barnes.tech/barnes-tech-logo-full.png"
+      logo_light = "https://barnes.tech/barnes-tech-logo-light.png"
+      logo_dark = "https://barnes.tech/barnes-tech-logo-dark.png"
       # title name
       name = ""
       # you can add extra information before the name (HTML format is supported), such as icons
