@@ -81,12 +81,12 @@ $toc-title-font-size: 1.2rem !default;
 $toc-content-font-size: 1rem !default;
 
 // Color of the single link
-$single-link-color: #2d96bd !default;
-$single-link-color-dark: #55bde2 !default;
+$single-link-color: #444 !default;  /* Dark gray for better readability */
+$single-link-color-dark: #bbb !default;  /* Light gray for dark mode */
 
 // Color of the hover single link
-$single-link-hover-color: #ef3982 !default;
-$single-link-hover-color-dark: #bdebfc !default;
+$single-link-hover-color: #111 !default;  /* Almost black on hover */
+$single-link-hover-color-dark: #ddd !default;  /* Brighter gray in dark mode */
 
 // Color of the table background
 $table-background-color: #fff !default;
@@ -97,8 +97,8 @@ $table-thead-color: #ededed !default;
 $table-thead-color-dark: #20252b !default;
 
 // Color of the blockquote
-$blockquote-color: #6bd6fd !default;
-$blockquote-color-dark: #59c5ec !default;
+$blockquote-color: #ccc !default; /* Light gray border */
+$blockquote-color-dark: #aaa !default; /* Slightly darker in dark mode */
 // ========== Single Content ========== //
 
 // ========== Pagination ========== //
