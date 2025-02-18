@@ -215,7 +215,7 @@
     RootMe= ""
     Email = ""
     Phone = ""
-    RSS = "https://barnes.tech/index.xml"
+    RSS = "https://barnes.tech/blog/index.xml"
 
   # Page global config
   [params.page]
