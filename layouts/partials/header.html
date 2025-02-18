@@ -1,3 +1,18 @@
+{{- /* Insert a meta tag for theme-color if not already present */ -}}
+<script>
+  (function() {
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (!meta) {
+      meta = document.createElement('meta');
+      meta.name = "theme-color";
+      meta.id = "theme-color";
+      // Default to light theme color
+      meta.content = "#ffffff";
+      document.head.appendChild(meta);
+    }
+  })();
+</script>
+
 {{- /* Desktop header */ -}}
 <header class="desktop" id="header-desktop">
   <div class="header-wrapper">
@@ -190,3 +205,35 @@
     <div id="search-dropdown-mobile"></div>
   </div>
 {{- end }}
+
+{{- /* JavaScript to update the theme-color meta tag when the theme changes */ -}}
+<script>
+  (function() {
+    function updateThemeColor(theme) {
+      var metaTag = document.getElementById('theme-color');
+      if (metaTag) {
+        // Change these hex codes to match your actual theme colors.
+        metaTag.setAttribute('content', theme === 'dark' ? '#000000' : '#ffffff');
+      }
+    }
+
+    function toggleTheme() {
+      var currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      var newTheme = (currentTheme === 'light') ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      updateThemeColor(newTheme);
+    }
+
+    // Set initial theme color on DOMContentLoaded.
+    document.addEventListener('DOMContentLoaded', function() {
+      var currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      updateThemeColor(currentTheme);
+    });
+
+    // Attach click event to all theme-switch elements.
+    var themeSwitches = document.querySelectorAll('.theme-switch');
+    themeSwitches.forEach(function(btn) {
+      btn.addEventListener('click', toggleTheme);
+    });
+  })();
+</script>
