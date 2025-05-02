@@ -322,7 +322,6 @@
         clientId = ""
         clientSecret = ""
       # Valine comment config (https://github.com/xCss/Valine)
-      # Valine 评论系统设置 (https://github.com/xCss/Valine)
       [params.page.comment.valine]
         enable = false
         appId = ""
@@ -332,7 +331,6 @@
         meta= ""
         pageSize = 10
         # automatically adapt the current theme i18n configuration when empty
-        # 为空时自动适配当前主题 i18n 配置
         lang = ""
         visitor = true
         recordIP = true
@@ -344,24 +342,16 @@
         # located in "themes/LoveIt/assets/lib/valine/emoji/" directory
         # you can store your own data files in the same path under your project:
         # "assets/lib/valine/emoji/"
-        # emoji 数据文件名称, 默认是 "google.yml"
-        # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
-        # 位于 "themes/LoveIt/assets/lib/valine/emoji/" 目录
-        # 可以在你的项目下相同路径存放你自己的数据文件:
-        # "assets/lib/valine/emoji/"
         emoji = ""
       # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
-      # Facebook 评论系统设置 (https://developers.facebook.com/docs/plugins/comments)
       [params.page.comment.facebook]
         enable = false
         width = "100%"
         numPosts = 10
         appId = ""
         # automatically adapt the current theme i18n configuration when empty
-        # 为空时自动适配当前主题 i18n 配置
         languageCode = ""
       # Telegram comments config (https://comments.app/)
-      # Telegram comments 评论系统设置 (https://comments.app/)
       [params.page.comment.telegram]
         enable = false
         siteID = ""
@@ -372,11 +362,9 @@
         dislikes = false
         outlined = false
       # Commento comment config (https://commento.io/)
-      # Commento comment 评论系统设置 (https://commento.io/)
       [params.page.comment.commento]
         enable = false
       # utterances comment config (https://utteranc.es/)
-      # utterances comment 评论系统设置 (https://utteranc.es/)
       [params.page.comment.utterances]
         enable = false
         # owner/repo
@@ -386,17 +374,14 @@
         lightTheme = "github-light"
         darkTheme = "github-dark"
       # giscus comment config (https://giscus.app/)
-      # giscus comment 评论系统设置 (https://giscus.app/zh-CN)
       [params.page.comment.giscus]
         # You can refer to the official documentation of giscus to use the following configuration.
-        # 你可以参考官方文档来使用下列配置
         enable = false
         repo = ""
         repoId = ""
         category = "Announcements"
         categoryId = ""
         # automatically adapt the current theme i18n configuration when empty
-        # 为空时自动适配当前主题 i18n 配置
         lang = ""
         mapping = "pathname"
         reactionsEnabled = "1"
@@ -406,44 +391,35 @@
         lightTheme = "light"
         darkTheme = "dark"
     # Third-party library config
-    # 第三方库配置
     [params.page.library]
       [params.page.library.css]
         # someCSS = "some.css"
-        # located in "assets/" 位于 "assets/"
-        # Or 或者
+        # located in "assets/"
+        # Or
         # someCSS = "https://cdn.example.com/some.css"
       [params.page.library.js]
         # someJavascript = "some.js"
-        # located in "assets/" 位于 "assets/"
-        # Or 或者
+        # located in "assets/"
+        # Or
         # someJavascript = "https://cdn.example.com/some.js"
     # Page SEO config
-    # 页面 SEO 配置
     [params.page.seo]
       # image URL
-      # 图片 URL
       images = []
       # Publisher info
-      # 出版者信息
       [params.page.seo.publisher]
         name = ""
         logoUrl = ""
 
   # TypeIt config
-  # TypeIt 配置
   [params.typeit]
     # typing speed between each step (measured in milliseconds)
-    # 每一步的打字速度 (单位是毫秒)
     speed = 100
     # blinking speed of the cursor (measured in milliseconds)
-    # 光标的闪烁速度 (单位是毫秒)
     cursorSpeed = 1000
     # character used for the cursor (HTML format is supported)
-    # 光标的字符 (支持 HTML 格式)
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
-    # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
     duration = -1
 
   # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
@@ -507,19 +483,11 @@
     # located in "themes/LoveIt/assets/data/cdn/" directory
     # you can store your own data files in the same path under your project:
     # "assets/data/cdn/"
-    # CDN 数据文件名称, 默认不启用
-    # ["jsdelivr.yml"]
-    # 位于 "themes/LoveIt/assets/data/cdn/" 目录
-    # 可以在你的项目下相同路径存放你自己的数据文件:
-    # "assets/data/cdn/"
     data = "jsdelivr.yml"
 
   # Compatibility config
-  # 兼容性设置
   [params.compatibility]
     # whether to use Polyfill.io to be compatible with older browsers
-    # 是否使用 Polyfill.io 来兼容旧式浏览器
     polyfill = false
     # whether to use object-fit-images to be compatible with older browsers
-    # 是否使用 object-fit-images 来兼容旧式浏览器
     objectFit = false
