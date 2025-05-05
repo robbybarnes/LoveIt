@@ -21,6 +21,13 @@
     <article class="page single">
         {{- /* Title */ -}}
         <h1 class="single-title animate__animated animate__flipInX">{{ .Title | emojify }}</h1>
+        
+        {{- /* Date display */ -}}
+        <div class="post-date">
+            {{- with .Site.Params.dateformat | default "January 2, 2006" | .PublishDate.Format -}}
+                <time datetime="{{ . }}">{{ . }}</time>
+            {{- end -}}
+        </div>
 
         {{- /* Subtitle */ -}}
         {{- with $params.subtitle -}}
